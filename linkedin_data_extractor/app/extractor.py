@@ -140,6 +140,7 @@ def extract_profile(url, extractor):
             "message": str(error)
         })
 
-    time.sleep(REQUEST_DELAY)
+    if not extractor.mock_mode:
+        time.sleep(REQUEST_DELAY)
 
     return result

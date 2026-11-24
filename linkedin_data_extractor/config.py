@@ -26,7 +26,8 @@ API_KEY = os.getenv("PROFILE_API_KEY", "")
 
 URL_COLUMN = os.getenv("URL_COLUMN", "")
 
-BATCH_SIZE = int(os.getenv("BATCH_SIZE", "100"))
+LIMIT = int(os.getenv("LIMIT", "0"))
+BATCH_SIZE = int(os.getenv("BATCH_SIZE", "500"))
 REQUEST_TIMEOUT = int(os.getenv("REQUEST_TIMEOUT", "30"))
 MAX_RETRIES = int(os.getenv("MAX_RETRIES", "3"))
 REQUEST_DELAY = float(os.getenv("REQUEST_DELAY", "1"))

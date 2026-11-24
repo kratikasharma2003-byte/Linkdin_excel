@@ -10,7 +10,8 @@ from config import (
     OUTPUT_FILE,
     ERROR_FILE,
     URL_COLUMN,
-    BATCH_SIZE
+    BATCH_SIZE,
+    LIMIT
 )
 
 from app.excel_reader import read_linkedin_urls
@@ -51,6 +52,10 @@ def run_extraction():
         print("Valid URLs:", len(urls))
         print("Invalid URLs:", len(invalid_urls))
 
+        if LIMIT and LIMIT > 0:
+            urls = urls[:LIMIT]
+            print(f"Limiting execution to first {LIMIT} URLs.")
+
         # Step 2: Connect authorized provider
         extractor = ProfileExtractor()
 
@@ -59,10 +64,13 @@ def run_extraction():
         # Step 3: Process URLs in batches
         for start in range(0, len(urls), BATCH_SIZE):
             batch = urls[start:start + BATCH_SIZE]
-            print(f"\nProcessing batch {start // BATCH_SIZE + 1}")
+            batch_num = start // BATCH_SIZE + 1
+            total_batches = (len(urls) + BATCH_SIZE - 1) // BATCH_SIZE
+            print(f"\nProcessing batch {batch_num}/{total_batches} ({len(batch)} items)")
 
             for index, url in enumerate(batch, start=1):
-                print(f"Processing {start + index}/{len(urls)}")
+                if index % 100 == 0 or index == len(batch):
+                    print(f"Progress: {start + index}/{len(urls)}")
                 record = extract_profile(url, extractor)
                 records.append(record)
 

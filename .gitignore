@@ -16,6 +16,11 @@ __pycache__/
 *.env
 !.env.example
 
+# Large data files
+linkedin_data_extractor/data/*.json
+!linkedin_data_extractor/data/errors.json
+
+
 # OS generated files
 .DS_Store
 Thumbs.db

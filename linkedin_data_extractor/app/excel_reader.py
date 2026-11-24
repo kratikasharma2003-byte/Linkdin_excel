@@ -21,7 +21,12 @@ def is_valid_linkedin_url(url):
 
 def read_linkedin_urls(file_path, url_column=None):
 
-    df = pd.read_excel(file_path)
+    if str(file_path).lower().endswith(".json"):
+        df = pd.read_json(file_path)
+    elif str(file_path).lower().endswith(".csv"):
+        df = pd.read_csv(file_path)
+    else:
+        df = pd.read_excel(file_path)
 
     if url_column and url_column in df.columns:
         column = url_column
