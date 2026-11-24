@@ -1,0 +1,102 @@
+[
+    {
+        "profile_url": "https://www.linkedin.com/in/satyanadella",
+        "extraction_status": "success",
+        "extracted_at": "2026-11-24T12:22:49.861838+00:00",
+        "profile": {
+            "name": "Satyanadella",
+            "profile_photo_url": null,
+            "headline": "Professional Profile (Satyanadella)",
+            "followers_count": 500,
+            "connections_count": 500,
+            "premium_status": false,
+            "about": "Simulated profile data for https://www.linkedin.com/in/satyanadella"
+        },
+        "account_history": {
+            "joined_linkedin": {
+                "month": null,
+                "year": null,
+                "display_text": null
+            },
+            "contact_info_last_updated": {
+                "display_text": null
+            },
+            "profile_photo_last_updated": {
+                "display_text": null
+            },
+            "identity_verification": {
+                "verified": null,
+                "method": null,
+                "month": null,
+                "year": null,
+                "display_text": null
+            }
+        },
+        "contact_info": {
+            "linkedin_url": "https://www.linkedin.com/in/satyanadella",
+            "websites": [],
+            "email": null,
+            "phone": null,
+            "other_links": []
+        },
+        "activities": [],
+        "experience": [],
+        "education": [],
+        "skills": [],
+        "recommendations": [],
+        "certifications": [],
+        "courses": [],
+        "languages": [],
+        "errors": []
+    },
+    {
+        "profile_url": "https://www.linkedin.com/in/williamhgates",
+        "extraction_status": "success",
+        "extracted_at": "2026-11-24T12:22:50.862051+00:00",
+        "profile": {
+            "name": "Williamhgates",
+            "profile_photo_url": null,
+            "headline": "Professional Profile (Williamhgates)",
+            "followers_count": 500,
+            "connections_count": 500,
+            "premium_status": false,
+            "about": "Simulated profile data for https://www.linkedin.com/in/williamhgates"
+        },
+        "account_history": {
+            "joined_linkedin": {
+                "month": null,
+                "year": null,
+                "display_text": null
+            },
+            "contact_info_last_updated": {
+                "display_text": null
+            },
+            "profile_photo_last_updated": {
+                "display_text": null
+            },
+            "identity_verification": {
+                "verified": null,
+                "method": null,
+                "month": null,
+                "year": null,
+                "display_text": null
+            }
+        },
+        "contact_info": {
+            "linkedin_url": "https://www.linkedin.com/in/williamhgates",
+            "websites": [],
+            "email": null,
+            "phone": null,
+            "other_links": []
+        },
+        "activities": [],
+        "experience": [],
+        "education": [],
+        "skills": [],
+        "recommendations": [],
+        "certifications": [],
+        "courses": [],
+        "languages": [],
+        "errors": []
+    }
+]

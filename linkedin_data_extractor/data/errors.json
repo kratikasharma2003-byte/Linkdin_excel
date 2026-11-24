@@ -1,0 +1,15 @@
+{
+    "invalid_urls": [],
+    "failed_profiles": [],
+    "performance": {
+        "profiles_processed": 2,
+        "successful_records": 2,
+        "partial_records": 0,
+        "failed_records": 0,
+        "invalid_urls": 0,
+        "execution_time_seconds": 2.17,
+        "average_processing_time_seconds": 1.08,
+        "errors": [],
+        "scalability": "Batch processing, controlled concurrency, provider rate limits and checkpointing recommended."
+    }
+}
